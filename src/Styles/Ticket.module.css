@@ -1,0 +1,7 @@
+.seat{
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    height: 240px;
+    width: 240px;
+}

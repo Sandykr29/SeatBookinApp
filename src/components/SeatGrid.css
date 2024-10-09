@@ -1,0 +1,109 @@
+/* Global body styling */
+body {
+  font-family: 'Arial', sans-serif; /* Clean, modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Soft background color for contrast */
+  color: #333; /* Standard dark color for text */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure content is centered vertically */
+}
+
+/* Main wrapper for the entire page */
+.page-wrapper {
+  max-width: 1200px; /* Control maximum width for content */
+  width: 100%;
+  padding: 20px;
+  background-color: white; /* White background for the main content */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px; /* Space around the page */
+}
+
+/* Centered heading styling */
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 24px; /* Larger font for headings */
+  color: #007bff; /* Primary color for the heading */
+  font-weight: bold;
+}
+
+/* Main container styling for each seat section */
+.seat-container {
+  display: grid;
+  gap: 10px; /* Same gap for both row and column */
+  grid-template-columns: repeat(auto-fit, 1fr); /* Dynamic fit for uniform square grid */
+  width: fit-content; /* Fit the grid content tightly */
+  margin: 0 auto 40px auto; /* Center the grid horizontally and space from the bottom */
+  padding: 20px; /* Add some padding around the grid */
+  background-color: #ffffff; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Individual seat styling */
+.seat {
+  height: 60px;
+  width: 60px; /* Ensure seats are square-shaped */
+  background-color: #28a745; /* Green for unbooked seats */
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Slight rounding for modern look */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect for unbooked seats */
+.seat:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the seat on hover */
+}
+
+/* Booked seats styling */
+.seat.booked {
+  background-color: #dc3545; /* Red for booked seats */
+}
+
+/* Hover effect for booked seats */
+.seat.booked:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge booked seats too */
+}
+
+/* Styling for the button */
+button {
+  display: block;
+  margin: 30px auto; /* Center the button with space */
+  padding: 15px 30px; /* Increased padding for a more clickable button */
+  background-color: #007bff; /* Blue background */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px; /* Rounded button for modern look */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for button */
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
